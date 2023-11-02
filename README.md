@@ -61,8 +61,8 @@
 # 정규표현식 사용법
 
 * JavaScript의 경우: `/패턴/플래그`
-* Python의 경우: re.compile(패턴, flags=re.l)
-* Java/Go의 경우: (?플래그)패턴
+* Python의 경우: re.compile(`패턴`, flags=re.l)
+* Java/Go의 경우: (?`플래그`)`패턴`
 
 # 간단한 예제
 
@@ -76,9 +76,9 @@
 
 |패턴|설명|
 |--|--|
-| `/Hi|Hello/` | Hi 또는 Hello 문자열을 찾음 |
-| `/gr(e|a)y/` | Grey 또는 Gray 문자열을 찾음 |
-| `/gr(?:e|a)y/` | Grey 또는 Gray 문자열을 찾음 (그룹이 지정되지 않음) |
+| `/Hi\|Hello/` | Hi 또는 Hello 문자열을 찾음 |
+| `/gr(e\|a)y/` | Grey 또는 Gray 문자열을 찾음 |
+| `/gr(?:e\|a)y/` | Grey 또는 Gray 문자열을 찾음 (그룹이 지정되지 않음) |
 | `/gr[aed]y/` | gray, grey, grdy 문자열을 찾음 |
 | `/gr[a-f]y/` | gray, grby, ..., grfy 문자열을 찾음 |
 | `/[a-zA-Z0-9]/` | 영숫자로 구성된 문자열을 찾음 |
